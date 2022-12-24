@@ -137,7 +137,7 @@ const renderNoteList = async (notes) => {
     };
 
     if (jsonNotes.length === 0) {
-        noteListItems.push(createLi('No Saved Notes', false));
+        noteListItems.push(createLi('No notes saved', false));
     }
 
     jsonNotes.forEach((note) => {
