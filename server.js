@@ -30,7 +30,7 @@ app.delete('/api/notes/:id', (request, response) => {
     fs.readFile('./db/db.json', 'utf8', (err, data) => {
         if (err) throw err;
         let notes = JSON.parse(data);
-        const newNotes = notes.filter(note => note.id !== parseInt (reqest.params.id));
+        const newNotes = notes.filter(note => note.id !== parseInt (request.params.id));
 
     fs.writeFile('./db/db.json', JSON.stringify(newNotes), (err, data) => { 
         response.json({msg: 'Success'});
@@ -51,13 +51,6 @@ app.get('/api/notes', (request, response) => {
     });
 });
 
-// app.get('/notes', (request, response) => {
-    // response.sendFile(path.join (__dirname, '/notes.html'))
-// });
-
-// app.get('*', (request, response) => {
-    // response.sendFile(path.join(__dirname, '/index.html'));
-// });
 app.get('/notes', (req, res) => {
     res.sendFile('notes.html', {root: 'public'});
   });
