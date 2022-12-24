@@ -51,13 +51,20 @@ app.get('/api/notes', (request, response) => {
     });
 });
 
-app.get('/notes', (request, response) => {
-    response.sendFile(path.join (__dirname, '/notes.html'))
-});
+// app.get('/notes', (request, response) => {
+    // response.sendFile(path.join (__dirname, '/notes.html'))
+// });
 
-app.get('*', (request, response) => {
-    response.sendFile(path.join(__dirname, '/index.html'));
-});
+// app.get('*', (request, response) => {
+    // response.sendFile(path.join(__dirname, '/index.html'));
+// });
+app.get('/notes', (req, res) => {
+    res.sendFile('notes.html', {root: 'public'});
+  });
+
+app.get('*', (req, res) => {
+    res.sendFile('index.html', {root: 'public'});
+  });
 
 // Server listening
 app.listen(PORT, () => {
