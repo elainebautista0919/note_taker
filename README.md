@@ -16,7 +16,7 @@
   Demo: https://drive.google.com/file/d/1FwfhRJj6fBq2IoxhKPrw8csX54GoorIp/view?usp=share_link
   
   Screenshot: 
-  <img src="./public/assets/note-taker.png">
+  <img src="./public/assets/assets/note-taker.png">
 
   ## Installation
 
