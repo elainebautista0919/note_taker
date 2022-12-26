@@ -13,6 +13,8 @@
 
   As part of Challenge 11, this uses Express JS to link 2 HTMLs together into a notetaker application.
 
+  Deployed App: https://elaine0919-note-taker.herokuapp.com/
+
   Demo: https://drive.google.com/file/d/1FwfhRJj6fBq2IoxhKPrw8csX54GoorIp/view?usp=share_link
   
   Screenshot: 
